@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+int x = 10, y = 5, z = 7, k = 7;
+
+printf("os operadores relacionais sao usados para fazer comparacoes\n");
+printf("quando o resultado da comparacao eh FALSO retorna, 0 (zero)\n)");
+printf("quando o resultado da comparacao eh VERDADEIRO retornam 1 \n");
+
+printf("\nvalor de x = %d", x);
+printf("valor de y = %d", y);
+printf("valor de z = %d", z);
+printf("valor de k = %d", k);
+
+printf("\n exemplo 1 x > y : %d", x > y);// V
+printf("\n exemplo 2 x < y : %d\n", x < y);// F
+	
+printf("\n exemplo 3 z == k : %d", z == k);//v
+printf("\n exemplo 4 z != k : %d", z != k);//F
+
+printf("\n exemplo 5 z >= x : %d", z >= x);//f
+printf("\n exemplo 6 z <= k : %d", z <= k);//v
+
+printf("\n exemplo 7 x + y > z + k : %d", x + y > z + k);//retorna 1
+
+
+return 0;
+}

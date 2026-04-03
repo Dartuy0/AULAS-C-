@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void) {
+int idade;
+float altura;
+char inicial;
+char resposta;
+
+puts("=== Cadastro_simples_em_C ===");
+
+printf("digite sua idade:");
+scanf("%d", &idade);
+
+printf("digite sua altura:");
+scanf("%f", &altura);
+
+printf("digite sua inicial:");
+scanf(" %c", &inicial);
+
+return 0;
+}

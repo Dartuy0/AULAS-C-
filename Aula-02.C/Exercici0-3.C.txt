@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main(void) {
+int idade;
+float altura;
+char inicial;
+char resposta;
+
+puts("=== Cadastro_simples_em_C ===");
+
+printf("digite sua idade:");
+scanf("%d", &idade);
+
+printf("digite sua altura:");
+scanf("%f", &altura);
+
+printf("digite sua inicial:");
+scanf(" %c", &inicial);
+
+/*
+Buffer do teclado:
+Após os scanf anteriores, pode sobrar '\n' no buffer
+o getc(stdin) abaixo consome esse ENTER pendene.
+*/
+
+getc(stdin);
+
+printf("voce gosta de programacao? (s/n): ");
+resposta = getc(stdin);
+	
+idade = idade + 1;
+
+printf("\n=== Resultados ===\n");
+printf("No procimo ano, voce tera %d anos.\n", idade);
+printf("sua altura informada foi %.2f m.\n", altura);
+printf("A inicial do seu nome e %c.\n", inicial);
+printf("sua resposta foi %c.\n", resposta);
+
+puts("programa encerrado com sucesso");
+
+
+return 0;
+}
+
