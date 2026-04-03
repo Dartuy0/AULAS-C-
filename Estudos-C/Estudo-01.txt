@@ -1,0 +1,9 @@
+int main(int argc, char *argv[]) {
+
+printf("Meu nome e Rudy\n");
+printf("Tenho 10 anos\n");
+printf("Estou aprendendo C\n");
+
+return 0;
+}
+

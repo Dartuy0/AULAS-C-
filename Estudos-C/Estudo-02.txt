@@ -1,0 +1,24 @@
+int main() {
+
+char nome [50];
+int idade;
+
+printf("digite seu nome:");
+scanf("%s", nome);
+
+printf("ola %s!\n", nome);
+
+printf("qual sua idade:");
+scanf("%d", &idade);
+
+printf("voce tem %d ne?", idade);
+
+if (idade >= 18) {
+printf("\nvoce e maior de idade!\n");
+} else {
+printf("\nvoce e menor de idade!\n");
+}
+
+
+return 0;
+}

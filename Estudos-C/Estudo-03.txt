@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+
+int idade = 18;
+float altura = 1.69;
+double peso = 49.1;
+
+printf("idade: %d\n", idade);
+printf("float: %.2f\n", altura);
+printf("double: %.2f\n", peso);
+return 0;
+}
