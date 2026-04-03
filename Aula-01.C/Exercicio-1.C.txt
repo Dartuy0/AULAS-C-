@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+int x = 100, y = 10;
+
+printf("valor inicial de x: $d \n", x);
+
+printf("\n-------------------pos-incremento------------------ \n\n");
+printf("valor de x na mesma linha do pos-incemento:%d \n",x++);//vai exibir 100
+printf("valor de x na linha seguinte ao pos-incemento: %d \n",x);//vai exibir 101
+
+printf("\n------------------pre-incremento------------------- \n\n");
+printf("valor de x na mesma linha do pre-incremento: %d \n", ++x);//vai exibir 102
+
+printf("valor inicial de y: %d \n", y);//nesta linha vai exibir 10
+
+printf("\n-------------------pos-decremento------------------- /n/n");
+printf("valor de y na mesma linha do pos-decremento: %d /n", y);//vai aparecer 10
+printf("valor de y na linha seguinte ao pos-pos-decremento: %d \n", y);//vai aparecer 9
+
+printf("\n------------------pos-decremento------------------- \n\n");
+printf("valor de y na mesma linha do pre-decremento: %d \n",--y);//vai exibir 8
+
+return 0;
+
+}
