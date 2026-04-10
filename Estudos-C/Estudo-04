@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main (){
+
+char inicial;
+int nota1;
+int nota2;
+float media;
+
+printf("digite sua inicial: ");
+scanf(" %c", &inicial);
+printf("qual foi a nota 1: ");
+scanf("%d", &nota1);
+printf("qual foi a nota 2: ");
+scanf("%d", &nota2);
+
+media = (nota1 + nota2) /2;
+printf("media: %.2f\n", media);
+
+if (media >= 10){
+	printf("aprovado com nota maxima");
+} else if (media >= 6){
+	printf("aprovado na media");
+} else {
+	printf("reprovado ");
+}
+return 0;
+}
