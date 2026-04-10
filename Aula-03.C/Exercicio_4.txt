@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main (){
+	float nota_AV;
+	float nota_simulado_1;
+	float nota_simulado_2;
+	char nota_final;
+	
+	printf("nota AV: \n");
+	scanf("%f", &nota_AV);
+	printf("nota simulado 1: \n");
+	scanf("%f", &nota_simulado_1);
+	printf("nota simulado 2: \n");
+	scanf("%f", &nota_simulado_2);
+	
+	nota_final = nota_AV + nota_simulado_1 + nota_simulado_2;
+	nota_final = (nota_final > 10) ? 10 : nota_final;
+	
+	printf("nota_final : %.1f\n", nota_final);
+	
+return 0;
+}
