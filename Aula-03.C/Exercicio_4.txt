@@ -4,7 +4,7 @@ int main (){
 	float nota_AV;
 	float nota_simulado_1;
 	float nota_simulado_2;
-	char nota_final;
+	float nota_final;
 	
 	printf("nota AV: \n");
 	scanf("%f", &nota_AV);
