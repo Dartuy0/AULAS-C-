@@ -17,6 +17,6 @@ int main (){
 	nota_final = (nota_final > 10) ? 10 : nota_final;
 	
 	printf("nota_final : %.1f\n", nota_final);
-	
+
 return 0;
 }
