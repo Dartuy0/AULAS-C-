@@ -1,0 +1,14 @@
+#include <iostream>
+
+int main(int argc, char** argv) {
+int cont, num;
+std::cout << "numero? ";
+std::cin >> num;
+//inicialização
+cont= 1;
+while (cont < 10){
+	std::cout <<num <<"x"<< cont << "=" << num *cont << std::endl;
+	cont++;
+}
+	return 0;
+}

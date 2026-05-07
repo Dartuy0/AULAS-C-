@@ -1,0 +1,15 @@
+#include <iostream>
+
+int main(int argc, char** argv) {
+	
+	int n;
+	std:: cout << "Digite um numero inteiro: ";
+	std:: cin >> n;
+	
+	usigned long long fatorial = 1;
+	for (int i = 1; i <= n; ++1) {
+		fatorial *= i;
+	}
+	std:: cout <<"O fatorial de " << n <, "e:" << fatorial << std::endl;
+	return 0;
+}
