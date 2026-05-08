@@ -1,0 +1,28 @@
+#include <iostream>
+
+
+int main(int argc, char** argv) {
+	int i;
+	float y, x, aux;
+	i = 0;
+	cout << "qual o valor de y?";
+	cin >> y;
+	if ( y == 0){
+		cout << "raizer de y=0" << endl;
+	} else {
+		if (y < 0){
+			cout <<"nao e possivel fazer o calculo" << endl;
+		}else {
+			x = y / 2;
+			aux = 0;
+			while (x != aux) {
+			aux = x;
+			x = x - ( x*x - y) / (2 *x);
+			i++	
+			}
+		}
+		cout<< "raiz de y="<< x <<endl;
+		cout << "numero de repeticoes:" << i <<endl;
+	}
+	return 0;
+}
