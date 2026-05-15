@@ -1,0 +1,31 @@
+C:
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+	char nome[50];
+	
+	printf("Digite seu nome completo:");
+	fgets(nome, 50, stdin);
+	
+	nome[strcspn(nome, "\n")] = '\0';
+	
+	printf("nome: %s\n", nome);
+	
+	return 0;
+	
+}
+C++PLUS
+#include <iostream>
+#include <string>
+//precisamos adicionar a string do include pois ele nao tem esse suporte diferente do c+
+int main(int argc, char** argv) {
+std::string nome;
+
+std::cout << "Digite su nome completo: ";
+std::getline(std::in, nome);// o getline serve para nos ajudar a limpar os espaços dos vetores
+
+std::cout << "Nome: " << nome << std::endl;
+
+	return 0;
+}

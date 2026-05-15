@@ -1,0 +1,17 @@
+#include <iostream>
+
+//puxando o valor de uma variavel para dentro do vetor.
+
+int main(void){
+	int variavel;
+	int vet [1];
+	
+variavel= 10;
+	vet[0] = variavel;
+	
+std::cout<<"vetor 1:" << vet[1];
+	
+	return 0;
+	
+	
+}
